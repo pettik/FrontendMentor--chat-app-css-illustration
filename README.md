@@ -1,4 +1,4 @@
-#⚠️ 22nd December 2022 - STARTING THIS PROJECT! 👨‍💻
+# ⚠️ 22nd December 2022 - STARTING THIS PROJECT! 👨‍💻
 
 
 # Frontend Mentor - Chat app CSS illustration
