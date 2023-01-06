@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -63,6 +64,56 @@ body {
   padding: 2rem;
 }
 
+/* phone-part */
+.phone {
+  max-width: 280px;
+  background-color: var(--light-grayish-violet);
+
+  border: 0.5rem solid var(--white);
+  border-radius: 2rem;
+}
+
+.phone p {
+  font-size: 0.7rem;
+}
+
+.phone img {
+  max-width: 50px;
+}
+
+.phone .header {
+  display: flex;
+  background: linear-gradient(
+    to left,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.phone .header .user-box .avatar {
+  max-width: 30px;
+}
+.phone .header .user-box p {
+  display: block;
+  color: var(--white);
+}
+.phone .header .user-box span {
+  display: block;
+}
+
+.phone .header .user-box {
+  display: flex;
+}
+
+.phone .header .user-box .avatar img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.phone .phone-body {
+  padding: 0.75rem;
+}
 /* text-part */
 .text-part {
   text-align: center;
