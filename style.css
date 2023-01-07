@@ -77,18 +77,15 @@ body {
   font-size: 0.7rem;
 }
 
-.phone img {
-  max-width: 50px;
-}
-
 .phone .header {
   display: flex;
+  align-items: center;
   background: linear-gradient(
     to left,
     var(--light-magenta),
     var(--light-violet)
   );
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
 }
 
 .phone .header .user-box .avatar {
@@ -97,23 +94,66 @@ body {
 .phone .header .user-box p {
   display: block;
   color: var(--white);
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 0.7rem;
 }
 .phone .header .user-box span {
   display: block;
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: var(--pale-violet);
+}
+
+.phone .header .arrow-icon {
+  display: flex;
+  width: 10%;
 }
 
 .phone .header .user-box {
   display: flex;
+  width: 100%;
+  column-gap: 0.5rem;
+}
+.phone .header .dots {
+  width: 10%;
 }
 
 .phone .header .user-box .avatar img {
   border-radius: 50%;
   width: 100%;
+  border: 1.5px solid var(--white);
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 2px 0;
+  border-radius: 50%;
 }
 
 .phone .phone-body {
   padding: 0.75rem;
 }
+
+.box-images {
+  display: flex;
+  column-gap: 0.4rem;
+}
+
+.box-images .box {
+  margin-bottom: 0.5rem;
+  max-width: 45px;
+  max-height: 45px;
+}
+
+.box-images .box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
 /* text-part */
 .text-part {
   text-align: center;
