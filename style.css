@@ -154,6 +154,22 @@ body {
   border-radius: 0.5rem;
 }
 
+.phone .left,
+.phone .right {
+  width: 70%;
+}
+
+.phone .left {
+  background-color: #ede5f4;
+  color: var(--moderate-violet);
+  float: left;
+}
+.phone .right {
+  background-color: var(--white);
+  color: var(--desaturated-dark-violet);
+  float: right;
+}
+
 /* text-part */
 .text-part {
   text-align: center;
