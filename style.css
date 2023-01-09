@@ -66,7 +66,7 @@ body {
 
 /* phone-part */
 .phone {
-  max-width: 280px;
+  max-width: 250px;
   background-color: var(--light-grayish-violet);
 
   border: 0.5rem solid var(--white);
@@ -157,6 +157,11 @@ body {
 .phone .left,
 .phone .right {
   width: 70%;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.6rem;
+  line-height: 1.5;
 }
 
 .phone .left {
@@ -168,6 +173,14 @@ body {
   background-color: var(--white);
   color: var(--desaturated-dark-violet);
   float: right;
+}
+.phone .phone-body .right.box-images {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.text-placeholder {
+  display: block;
 }
 
 /* text-part */
