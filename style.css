@@ -79,6 +79,7 @@ body {
 
 .phone .header {
   display: flex;
+  position: relative;
   align-items: center;
   background: linear-gradient(
     to left,
@@ -86,6 +87,18 @@ body {
     var(--light-violet)
   );
   padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
+
+.header .white-square {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  z-index: 2;
+  background: white;
+  transform: translateX(-50%);
 }
 
 .phone .header .user-box .avatar {
