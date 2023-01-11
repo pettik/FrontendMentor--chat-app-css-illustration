@@ -87,6 +87,7 @@ body {
     var(--light-violet)
   );
   padding: 2rem 0.5rem 0.5rem 0.5rem;
+  overflow: hidden;
 }
 
 .header .white-square {
@@ -94,11 +95,12 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 30px;
-  height: 2px;
+  width: 140px;
+  height: 30px;
   z-index: 2;
+  border-radius: 0.8rem;
   background: white;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-40%);
 }
 
 .phone .header .user-box .avatar {
