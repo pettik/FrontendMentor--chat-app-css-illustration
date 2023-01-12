@@ -189,6 +189,20 @@ body {
   color: var(--desaturated-dark-violet);
   float: right;
 }
+.phone .left.option {
+  background: linear-gradient(
+    to right,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  display: flex;
+  float: left;
+  width: 90%;
+}
+.phone .left.option p {
+  color: var(--white);
+}
+
 .phone .phone-body .right.box-images {
   background-color: transparent;
   margin-bottom: 0;
