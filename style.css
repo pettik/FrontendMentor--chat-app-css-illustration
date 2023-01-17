@@ -179,7 +179,7 @@ body {
   border-radius: 0.5rem;
   font-size: 0.6rem;
   line-height: 1.5;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.025);
 }
 
 .phone .right.box-images {
@@ -196,20 +196,47 @@ body {
   color: var(--desaturated-dark-violet);
   float: right;
 }
+
 .phone .left.option {
-  background: linear-gradient(
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-size: 0.3rem;
+  font-weight: 400;
+  background-image: linear-gradient(
     to right,
     var(--light-magenta),
     var(--light-violet)
   );
-  display: flex;
-  float: left;
+  border-radius: 7px;
+  border-bottom-left-radius: 3px;
   width: 90%;
+  padding: 0.4rem 0.75rem;
+  margin: 0.5em 0.5em 0.5em 0;
+  position: relative;
 }
-.phone .left.option p {
+.phone .left.option p:not(.price) {
   color: var(--white);
+  width: auto;
 }
 
+.round {
+  content: '';
+  background: transparent;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 0.15rem;
+}
+
+.phone p.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+}
 .phone .phone-body .right.box-images {
   background-color: transparent;
   margin-bottom: 0;
