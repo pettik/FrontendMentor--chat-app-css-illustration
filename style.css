@@ -176,7 +176,8 @@ body {
   width: 70%;
   margin-bottom: 0.5rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
+
   font-size: 0.6rem;
   line-height: 1.5;
   box-shadow: 0 10px 4px rgba(0, 0, 0, 0.025);
@@ -190,19 +191,21 @@ body {
   background-color: #ede5f4;
   color: var(--moderate-violet);
   float: left;
+  border-bottom-left-radius: 0.3rem;
 }
 .phone .right {
   background-color: var(--white);
   color: var(--desaturated-dark-violet);
   float: right;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .phone .left.option {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   color: var(--white);
-  font-size: 0.3rem;
+
   font-weight: 400;
   background-image: linear-gradient(
     to right,
@@ -216,9 +219,9 @@ body {
   margin: 0.5em 0.5em 0.5em 0;
   position: relative;
 }
-.phone .left.option p:not(.price) {
+
+.phone .left.option {
   color: var(--white);
-  width: auto;
 }
 
 .round {
@@ -230,12 +233,22 @@ body {
   border-radius: 50%;
   border: 1px solid var(--white);
   margin-right: 0.15rem;
+  flex: 0.3;
+  margin-right: 0.5rem;
 }
 
-.phone p.price {
+.phone .price {
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
+  justify-self: right;
+  flex: 1;
+  text-align: center;
+}
+
+.option-text {
+  font-size: 0.6rem;
+  flex: 2;
 }
 .phone .phone-body .right.box-images {
   background-color: transparent;
