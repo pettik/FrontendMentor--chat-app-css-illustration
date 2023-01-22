@@ -8,6 +8,8 @@
   --very-dark-desaturated-violet: hsl(271, 36%, 24%);
   --dark-grayish-violet: hsl(270, 7%, 64%);
 
+  --new: hsl(290, 37%, 97%);
+
   --light-magenta: hsl(293, 100%, 63%);
   --light-violet: hsl(264, 100%, 61%);
 
@@ -29,7 +31,7 @@
 body {
   font-family: 'Rubik', sans-serif;
 
-  color: #fafafa;
+  color: var(--new);
   height: 100vh;
   width: auto;
   display: flex;
@@ -55,6 +57,10 @@ body {
   border-bottom-right-radius: 250px;
 }
 
+.nice-background-2 {
+  display: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -64,9 +70,14 @@ body {
   padding: 2rem;
 }
 
+i:hover,
+.dot:hover {
+  cursor: pointer;
+}
+
 /* phone-part */
 .phone {
-  max-width: 250px;
+  max-width: 270px;
   background-color: var(--light-grayish-violet);
 
   border: 0.5rem solid var(--white);
@@ -296,9 +307,48 @@ h1 {
 p {
   color: var(--dark-grayish-violet);
   line-height: 1.6;
-  font-size: 1.12rem;
+  font-size: 1.1rem;
 }
 
 .attribution {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    align-items: center;
+    max-width: 1024px;
+    flex-direction: row;
+    column-gap: 8rem;
+  }
+
+  .text-part {
+    text-align: left;
+  }
+
+  .nice-background {
+    width: 30vw;
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 400px;
+    height: 55rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nice-background.nice-background-2 {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: inherit;
+    bottom: 0;
+    top: inherit;
+    background: hsl(264, 33%, 97%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+    width: 40vw;
+    z-index: -2;
+    margin-right: -10%;
+  }
 }
